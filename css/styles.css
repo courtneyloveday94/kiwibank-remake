@@ -1,79 +1,106 @@
 body {
 	margin: 0;
-	background-color: #eaeaea;
-	font-family: Helvetica, Arial, sans-serif;
 }
+
 nav {
+	background-color: #69A41E;
+}
+
+nav div {
 	background-color: #77BA22;
-	border-bottom: 1px solid #69A41E;
-	height: 55px;
 	max-width: 1346px;
 	margin: 0 auto;
-	font-family: times, serif;
+	padding: 0 10px;
 }
-#nav-container {
-	background-color: #69A41E;
-	width: 100%;
-}
+
 #hamburger {
 	float: right;
-	margin: 12.5px;
+	margin-top: 15px;
 }
+
 nav ul {
 	display: none;
 }
-nav img:not(#hamburger) {
-	margin-left: 20px;
-}
-#content {
-	max-width: 1346px;
-	margin: 0 auto;
-	color: #fff;
-}
-#mobile-banking-container {
-	max-width: 520px;
-	margin: 0 auto;
-}
+
 #mobile-banking {
-	background-color: #eee;
+	background-color: #eeeeee;
 	padding: 20px;
+	font-family: Helvetica, Arial;
 }
+
 #mobile-banking h1 {
-	font-size: 15px;
+	font-size: 16px;
 }
+
 .login {
 	background-color: #528224;
-	color: #fff;
-	text-decoration: none;
-	width: 46.5%;
+	color: #ffffff;
+	width: 40%;
 	text-align: center;
-	padding: 10px 0;
-	margin-bottom: 10px;
 }
-#mobile-banking a {
-	display: inline-block;
-}
+
 .login + .login {
 	float: right;
 }
-#mobile-banking .contact {
-	display: block;
-	background-color: #fff;
-	border: 1px solid #ccc;
+
+#mobile-banking a {
+	display: inline-block;
 	padding: 10px;
-	margin-bottom: 5px;
-	color: #111;
+	text-decoration: none;
+	margin: 10px 0;
+}
+
+#mobile-banking .contact {
+	background-color: #fff;
+	display: block;
+	color: #333333;
+	border: 1px solid #dddddd;
+}
+
+#mobile-banking ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#hero {
+	background-color: #333333;
+	padding-top: 200px;
+	background-image: url(http://placehold.it/400x300);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	max-width: 1346px;
+	margin: 0 auto;
+}
+
+#hero > p {
+	background-color: #fff;
+	display: inline-block;
+	padding: 10px;
+	float: right;
+}
+
+#hero div {
+	background-color: #555;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	clear: both;
+}
+
+#hero a {
+	background-color: #ffffff;
+	padding: 10px;
+	color: #1B9DCF;
+	display: inline-block;
 	text-decoration: none;
 }
-.hours {
-	list-style: none;
-	padding: 0;
-	color: #333;
-	font-size: 13px;
+
+#hero button {
+	display: none;
 }
-.hours li {
-	padding-bottom: 5px;
-}
+
+
+
 
 
 
@@ -83,74 +110,111 @@ nav img:not(#hamburger) {
 
 
 @media all and (min-width: 600px) {
+
 	#mobile-banking {
 		display: none;
 	}
+
 }
 
 @media all and (min-width: 720px) {
+
 	nav ul {
 		display: block;
 		margin: 0;
 	}
+
 	#hamburger {
 		display: none;
 	}
-	nav a span {
-		display: none;
-	}
+
 	nav img {
 		float: left;
 	}
+
 	nav li {
 		display: inline-block;
-		line-height: 52.5px;
-		padding-right: 20px;
+		line-height: 50px;
+		padding: 0 10px;
 	}
+
 	nav ul:nth-of-type(1) {
 		float: left;
 	}
+
 	nav ul:nth-of-type(2) {
 		float: right;
-	}	
-	nav:after {
+	}
+
+	nav div:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
+
 	nav a {
 		color: #fff;
 		text-decoration: none;
-		font-size:;
 	}
-	/*nav a span:hover, nav a:hover {
-		text-decoration: underline
-	}*/
-}
 
-@media all and (min-width: 976px) {
 	nav a span {
-		display: inline-block;
+		display: none;
 	}
-	nav li {
-		padding-right: 30px;
+
+	#hero {
+		position: relative;
+		background-size: auto;
+		background-position: right;
 	}
+
+	#hero div {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 300px;
+	}
+
+	#hero:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+
+	#hero > p {
+		margin-bottom: 0;
+	}
+	
 }
 
+@media all and (min-width: 970px) {
 
+	nav a span {
+		display: inline;
+	}
 
+	nav li {
+		padding: 0 15px;
+	}
 
+}
 
+@media all and (min-width: 1020px) {
 
+	#hero button {
+		display: block;
+		position: absolute;
+		top: 50%;
+	}
 
+	#prev {
+		left: 0;
+	}
 
+	#next {
+		right: 0;
+	}
 
-
-
-
-
-
-
+}
 
 
 
