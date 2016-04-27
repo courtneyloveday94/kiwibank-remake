@@ -99,6 +99,108 @@ nav ul {
 	display: none;
 }
 
+#products {
+	text-align: center;
+	padding: 10px;
+	background-color: #fff;
+}
+#products h1 {
+	color: #77BA22;
+}
+#products p {
+	font-family: helvetica, sans-serif;
+	font-size: 15px;
+	color: #333;
+	line-height: 22.5px;
+}
+#products a {
+	text-decoration: none;
+	color: #25A5CA;
+	font-family: helvetica, sans-serif;
+	display: inline-block;
+	background-color: #fafafa;
+	border: 1px solid #efefef;
+	line-height: 22.5px;
+	padding: 5.3px 12px;
+	margin: 7.5px 1.8px 0;
+	font-size: 15px;
+}
+#products .percentage + a {
+	background-color: transparent;
+	border: none;
+	font-size: 14px;
+}
+
+.percentage {
+	width: 270px;
+	height: 150px;
+	border: 1px solid #ddd;
+	background-color: #fff;
+	margin: 20px 0;
+	box-shadow: 0 9px 0 -6px #eee;
+	text-align: left;
+	font-family: helvetica, sans-serif;
+	position: relative;
+}
+
+.percentage > span {
+	text-transform: uppercase;
+	font-size: 11px;
+	background-color: #dfdfdf;
+	display: inline-block;
+	font-weight: 700;
+	padding: 6px 10px;
+}
+span.limited {
+	color: #fff;
+	background-color: #FF9100;
+	margin-right: -5px;
+}
+
+#products .percentage p {
+	font-size: 68px;
+	line-height: 68px;
+	font-weight: 900;
+	color: #353535;
+	font-family: serif;
+	position: relative;
+	top: -60px;
+	left: 10px;
+}
+.percentage p:before {
+	content: '%';
+	font-size: 34px;
+	position: absolute;
+	right: 105;
+	top: -17px;
+	font-family: helvetica, sans-serif;
+}
+.percentage p:after {
+	content: 'p.a.';
+	font-size: 24px;
+	position: absolute;
+	right: 100px;
+	top: 8px;
+}
+
+.percentage ul {
+	list-style: none;
+	padding-left: 0;
+	color: #777;
+	position: absolute;
+	top: 75px;
+	left: 10px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -110,110 +212,87 @@ nav ul {
 
 
 @media all and (min-width: 600px) {
-
 	#mobile-banking {
 		display: none;
 	}
-
 }
 
 @media all and (min-width: 720px) {
-
 	nav ul {
 		display: block;
 		margin: 0;
 	}
-
 	#hamburger {
 		display: none;
 	}
-
 	nav img {
 		float: left;
 	}
-
 	nav li {
 		display: inline-block;
 		line-height: 50px;
 		padding: 0 10px;
 	}
-
 	nav ul:nth-of-type(1) {
 		float: left;
 	}
-
 	nav ul:nth-of-type(2) {
 		float: right;
 	}
-
 	nav div:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
-
 	nav a {
 		color: #fff;
 		text-decoration: none;
 	}
-
 	nav a span {
 		display: none;
 	}
-
 	#hero {
 		position: relative;
 		background-size: auto;
 		background-position: right;
 	}
-
 	#hero div {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 300px;
 	}
-
 	#hero:after {
 		content: '';
 		display: block;
 		clear: both;
 	}
-
 	#hero > p {
 		margin-bottom: 0;
 	}
-	
 }
 
 @media all and (min-width: 970px) {
-
 	nav a span {
 		display: inline;
 	}
-
 	nav li {
 		padding: 0 15px;
 	}
-
 }
 
 @media all and (min-width: 1020px) {
-
 	#hero button {
 		display: block;
 		position: absolute;
 		top: 50%;
 	}
-
 	#prev {
 		left: 0;
 	}
-
 	#next {
 		right: 0;
 	}
-
 }
 
 
